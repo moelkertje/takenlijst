@@ -36,3 +36,6 @@ jobs:
 
       - name: Run tests
         run: python test.py
+
+      - name: Deploy
+        run: gunicorn -w 2 main:app
